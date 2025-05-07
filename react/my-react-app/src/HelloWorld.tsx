@@ -1,11 +1,19 @@
+import Button from "./Button";
 
-
-function HelloWorld() {
-  return (
-    <>
-     <h1>halo dunia</h1>
-    </>
-  )
+type PropHello = {
+  name: string
 }
 
-export default HelloWorld
+export default function HelloWorld( props: PropHello){
+  return (
+    <>
+     <h1>Halo {props.name}</h1>
+     <h2>Ayo belajar react</h2>
+     <Button flag ='Hello'/>
+    </>
+  );
+}
+  
+
+
+
